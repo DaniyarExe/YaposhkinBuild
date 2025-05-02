@@ -1,0 +1,78 @@
+.Main {
+    background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.5)),
+        url("../../../public/assets/img/Rectangle.png");
+
+    background-size: cover;
+    color: #fff;
+    font-family: "Light";
+    padding: 150px;
+
+}
+
+.logo {
+    padding-top: 600px;
+    font-family: "Ultra";
+}
+
+.logo h1 {
+    font-size: 50px;
+}
+
+.FranchiseDescrip {
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.Locations {
+    display: flex;
+    align-items: center;
+    gap: 400px;
+    padding-top: 40px;
+}
+
+.ActualLocations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.ActualLocations h1 {
+    font-size: 80px;
+}
+
+.ActualLocations p {
+    font-size: 28px;
+}
+
+.ProjectLocations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.ProjectLocations h1{
+    font-size: 80px;
+}
+
+.ProjectLocations p {
+    font-size: 28px;
+}
+
+.YaposhkinRolls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.YaposhkinRolls h1 {
+    font-size: 80px;
+}
+
+.YaposhkinRolls p{
+    font-size: 28px;
+}

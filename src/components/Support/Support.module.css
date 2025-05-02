@@ -1,0 +1,49 @@
+.Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    font-family: "Light";
+    padding: 150px;
+}
+
+.SupportMain {
+    font-family: "Ultra";
+    font-size: 30px;
+}
+
+.BussinesInfo {
+    display: flex;
+    padding-top: 50px;
+    gap: 180px;
+}
+
+.websiteHeader {
+    font-family: "Ultra";
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.webDescrip{
+    font-size: 20px;
+}
+
+.systemHeader {
+    font-family: "Ultra";
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.systemDescrip{
+    font-size: 20px;
+}
+
+.marketingHeader {
+    font-family: "Ultra";
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.marketingDescrip{
+    font-size: 20px;
+}

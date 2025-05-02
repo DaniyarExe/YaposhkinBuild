@@ -1,0 +1,17 @@
+.Number{
+    color: #28B9D8;
+    font-size: 40px;
+    font-family: "Ultra";
+}
+
+.header{
+    color: #28B9D8;
+    font-family: "Ultra";
+    font-size: 30px;
+    width: 200px;
+}
+
+.description{
+    font-size: 25px;
+    font-family: "Light";
+}

@@ -1,0 +1,123 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.mainInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoInfo {
+    width: 700px;
+    color: #fff;
+    font-family: "Ultra";
+    font-size: 30px;
+}
+
+.description {
+    color: #fff;
+    font-family: "Light";
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.mainInfo,
+.request,
+.sideInfo {
+    margin: 0 auto;
+}
+
+.request {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.mainImg img {
+    width: 700px;
+}
+
+.getPresentation {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    font-family: "Ultra";
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.getPresentation p {
+    color: #29b7d8;
+    font-size: 25px;
+}
+
+.requestInfo {
+    display: flex;
+    align-items: center;
+    font-family: "Light";
+    color: #fff;
+    gap: 10px;
+    font-size: 25px;
+    font-weight: 200;
+    width: 400px;
+}
+
+.Ultra{
+    font-family: "Ultra"; 
+}
+
+.sideInfo {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    font-size: 25px;
+    color: #fff;
+    font-family: "Light";
+    margin-top: 100px;
+}
+
+.yearImg {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 40px;
+}
+
+.yearImg img {
+    width: 25px;
+}
+
+.yearInfo {
+    width: 300px;
+}
+
+.moneyImg {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 40px;
+}
+
+.moneyImg img {
+    width: 25px;
+}
+
+.moneyInfo {
+    width: 300px;
+}
+
+.orderImg {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 40px;
+}
+
+.orderImg img {
+    width: 25px;
+}

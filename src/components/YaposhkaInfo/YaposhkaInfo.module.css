@@ -1,0 +1,17 @@
+.Main {
+    background-color: #fff;
+    padding: 150px;
+}
+
+.logo img{
+    width: 550px;
+}
+
+.YaposhkaInfo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px 60px;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,33 @@
+.Main {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 150px;
+}
+
+.Partner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Partner h1 {
+    font-family: "Ultra";
+    font-size: 140px;
+    color: #28B9D8;
+}
+
+.Partner p {
+    display: flex;
+    font-size: 33px;
+    font-family: "Light";
+}
+
+.PortraitCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 110px;
+    padding-top: 50px;
+    margin: 0 auto;
+}

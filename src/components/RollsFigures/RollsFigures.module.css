@@ -1,0 +1,139 @@
+.Main {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-family: "Light";
+    margin-top: 200px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.logo img {
+    width: 500px;
+}
+
+.logo h1 {
+    font-family: "Ultra";
+    font-size: 46px;
+}
+
+.MoneyInfo {
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+
+.Moneys {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 70px;
+}
+
+.arrived {
+    font-family: "Ultra";
+    font-size: 25px;
+    width: 300px;
+}
+
+.arrivedDescrip {
+    width: 450px;
+    font-size: 18px;
+}
+
+.Earnings {
+    font-family: "Ultra";
+    font-size: 25px;
+    width: 300px;
+}
+
+.EarningsDescrip {
+    width: 450px;
+    font-size: 18px;
+}
+
+.withoutRoyalty {
+    width: 350px;
+    background-color: #fff;
+    color: #29b7d8;
+    border-radius: 45px 45px 0px 0px;
+    padding: 20px;
+}
+
+.withoutRoyalty h1 {
+    font-family: "Ultra";
+    font-size: 40px;
+    width: 200px;
+}
+
+.withoutRoyalty p {
+    font-size: 18px;
+}
+
+.percent h1 {
+    font-size: 70px;
+}
+
+.chopstickCenter img {
+    width: 700px;
+}
+
+.Payback {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 70px;
+}
+
+.RollsOccupancy {
+    text-align: end;
+}
+
+.occupancy {
+    font-family: "Ultra";
+    font-size: 25px;
+}
+
+.occupancyDescrip {
+    font-size: 18px;
+}
+
+.RollsInvetments {
+    text-align: end;
+}
+
+.investments {
+    font-family: "Ultra";
+    font-size: 25px;
+}
+
+.investmentsDescrip {
+    font-size: 18px;
+}
+
+.LumpSum {
+    width: 420px;
+    background-color: #fff;
+    color: #29b7d8;
+    border-radius: 45px 45px 0px 0px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.LumpSum h1 {
+    display: flex;
+    align-items: end;
+    font-family: "Ultra";
+    font-size: 40px;
+    width: 300px;
+}
+
+.percent {
+    font-family: "Ultra";
+    font-size: 100px;
+}

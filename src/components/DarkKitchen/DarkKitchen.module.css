@@ -1,0 +1,52 @@
+.Main {
+    background-image: url("../../../public/assets/img/darkKitchen.png");
+    width: 100%;
+    height: 997px;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Light';
+    padding: 150px;
+  }
+
+.DKmain {
+    font-family: "Ultra";
+    font-size: 30px;
+}
+
+.DKdescrip {
+    font-size: 32px;
+    padding-top: 20px;
+}
+
+.InvestDateInfo {
+    display: flex;
+    gap: 230px;
+    padding-top: 30px;
+}
+
+.OpeningDates {
+    font-size: 25px;
+}
+
+.bold {
+    font-family: "Ultra";
+    font-size: 30px;
+}
+
+.Invest {
+    font-size: 25px;
+}
+
+.Presentation{
+    padding-top: 30px;
+}
+
+.Presentation button{
+    border: 1px solid #fff;
+    background: none;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 25px;
+    color: #fff;
+    font-family: "Ultra";
+}

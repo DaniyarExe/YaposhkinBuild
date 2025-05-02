@@ -1,0 +1,56 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 750px;
+    margin: 100px;
+}
+
+.logo {
+    font-family: "LogoFont";
+    color: #fff;
+}
+
+.logo img{
+    width: 500px;
+}
+
+.linkToApp {
+    display: flex;
+    gap: 20px;
+    font-family: "Ultra";
+    font-weight: 500;
+}
+
+.linkToApp img {
+    width: 38px;
+}
+
+.appStore {
+    width: 160px;
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.appStore a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.google {
+    width: 160px;
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 6px;
+}
+.google a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+}

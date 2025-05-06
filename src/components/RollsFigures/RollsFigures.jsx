@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './RollsFigures.module.css'
 import logo from '../../../public/assets/logo/сайт_6.pdf__3_-removebg-preview (1).png'
-import secondChopstick from '../../../public/assets/img/сайт_6.pdf__4_-removebg-preview.png'
+import secondChopstick from '../../../public/assets/img/chopstick123.png'
 
 const RollsFigures = () => {
     return (
@@ -19,8 +19,8 @@ const RollsFigures = () => {
                         </div>
                         <div className={style.arrivedDescrip}>
                             <p>Бизнес с высокой маржинальностью,</p>
-                                <p>позволяющий быстро выйти</p>
-                                <p>на стабильную прибыль.</p>
+                            <p>позволяющий быстро выйти</p>
+                            <p>на стабильную прибыль.</p>
                         </div>
                     </div>
                     <div className={style.RollsEarnings}>
@@ -31,8 +31,8 @@ const RollsFigures = () => {
                         </div>
                         <div className={style.EarningsDescrip}>
                             <p>Проверенная бизнес-модель</p>
-                                <p>позволяет достигать стабильного</p>
-                                <p>оборота уже с первых месяцев</p>
+                            <p>позволяет достигать стабильного</p>
+                            <p>оборота уже с первых месяцев</p>
                         </div>
                     </div>
                     <div className={style.withoutRoyalty}>
@@ -41,8 +41,8 @@ const RollsFigures = () => {
                             <h1 >0%</h1>
                         </div>
                         <p>Всё, что вы зарабатываете,</p>
-                            <p>остаётся у вас. Мы не забираем</p>
-                            <p>процент с вашей выручки</p>
+                        <p>остаётся у вас. Мы не забираем</p>
+                        <p>процент с вашей выручки</p>
                     </div>
                 </div>
                 <div className={style.chopstickCenter}>

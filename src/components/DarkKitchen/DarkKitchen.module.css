@@ -1,12 +1,14 @@
 .Main {
     background-image: url("../../../public/assets/img/darkKitchen.png");
-    width: 100%;
-    height: 997px;
     background-size: cover;
+    background-position: center;
+    width: 100%;
     color: #fff;
     font-family: 'Light';
     padding: 150px;
-  }
+    box-sizing: border-box;
+    
+}
 
 .DKmain {
     font-family: "Ultra";
@@ -16,15 +18,20 @@
 .DKdescrip {
     font-size: 32px;
     padding-top: 20px;
+    max-width: 1200px;
 }
 
 .InvestDateInfo {
     display: flex;
-    gap: 230px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
     padding-top: 30px;
+    max-width: 650px;
 }
 
-.OpeningDates {
+.OpeningDates,
+.Invest {
     font-size: 25px;
 }
 
@@ -33,20 +40,53 @@
     font-size: 30px;
 }
 
-.Invest {
-    font-size: 25px;
-}
-
-.Presentation{
+.Presentation {
     padding-top: 30px;
 }
 
-.Presentation button{
+.Presentation button {
     border: 1px solid #fff;
     background: none;
-    padding: 20px;
+    padding: 20px 30px;
     border-radius: 20px;
     font-size: 25px;
     color: #fff;
     font-family: "Ultra";
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .Main {
+        padding: 80px 15px;
+        background-position: center;
+        text-align: start;
+    }
+
+    .DKmain {
+        font-size: 24px;
+    }
+
+    .DKdescrip {
+        font-size: 20px;
+    }
+
+    .InvestDateInfo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .OpeningDates,
+    .Invest {
+        font-size: 18px;
+    }
+
+    .bold {
+        font-size: 24px;
+    }
+
+    .Presentation button {
+        width: 100%;
+        font-size: 20px;
+        padding: 16px;
+    }
 }

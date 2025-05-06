@@ -1,10 +1,13 @@
 .Main {
     background-color: #fff;
     padding: 150px;
+    box-sizing: border-box;
 }
 
-.logo img{
-    width: 550px;
+.logo img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
 }
 
 .YaposhkaInfo {
@@ -14,4 +17,26 @@
     padding-top: 50px;
     justify-content: center;
     align-items: center;
+    
+}
+
+@media (max-width: 768px) {
+    .Main {
+        padding: 80px 15px;
+    }
+
+    .YaposhkaInfo {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .logo img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .PhotoCollage {
+        display: none;
+    }
 }

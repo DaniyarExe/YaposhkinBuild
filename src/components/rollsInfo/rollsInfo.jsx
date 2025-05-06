@@ -23,9 +23,10 @@ const rollsInfo = () => {
                                 <p>Получить презентацию</p>
                             </a>
                         </div>
+                        <img src={leftArrow} alt="" />
                         <div className={style.requestInfo}>
-                            <img src={leftArrow} alt="" />
-                            <p>Оставьте заявку и получите презентацию франшизы</p>
+                            <p>Оставьте заявку и получите</p>
+                            <p>презентацию франшизы</p>
                         </div>
                     </div>
                 </div>

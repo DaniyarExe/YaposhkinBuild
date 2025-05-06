@@ -5,6 +5,7 @@
     color: #fff;
     font-family: "Light";
     padding: 150px;
+    box-sizing: border-box;
 }
 
 .SupportMain {
@@ -14,36 +15,51 @@
 
 .BussinesInfo {
     display: flex;
+    justify-content: space-between;
+    gap: 80px;
     padding-top: 50px;
-    gap: 180px;
+    flex-wrap: wrap;
 }
 
-.websiteHeader {
-    font-family: "Ultra";
-    padding-bottom: 10px;
-    font-size: 30px;
-}
-
-.webDescrip{
-    font-size: 20px;
-}
-
-.systemHeader {
-    font-family: "Ultra";
-    padding-bottom: 10px;
-    font-size: 30px;
-}
-
-.systemDescrip{
-    font-size: 20px;
-}
-
+.websiteHeader,
+.systemHeader,
 .marketingHeader {
     font-family: "Ultra";
-    padding-bottom: 10px;
     font-size: 30px;
+    padding-bottom: 10px;
 }
 
-.marketingDescrip{
+.webDescrip,
+.systemDescrip,
+.marketingDescrip {
     font-size: 20px;
+    max-width: 500px;
+}
+
+@media (max-width: 768px) {
+    .Main {
+        padding: 80px 15px;
+        text-align: center;
+    }
+
+    .SupportMain {
+        font-size: 24px;
+    }
+
+    .BussinesInfo {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .websiteHeader,
+    .systemHeader,
+    .marketingHeader {
+        font-size: 24px;
+    }
+
+    .webDescrip,
+    .systemDescrip,
+    .marketingDescrip {
+        font-size: 18px;
+    }
 }

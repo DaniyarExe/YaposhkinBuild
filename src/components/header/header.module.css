@@ -1,18 +1,26 @@
 .main {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 750px;
-    margin: 100px;
+    justify-content: space-between;
+    padding: 100px;
+    flex-wrap: wrap;
+    gap: 40px;
+    /* Add min-width for responsive design */
+    min-width: 300px;
 }
 
 .logo {
     font-family: "LogoFont";
     color: #fff;
+    max-width: 100%;
+    /* Ensure logo has enough space without overflowing */
+    flex: 1 1 300px;
 }
 
-.logo img{
-    width: 500px;
+.logo img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
 }
 
 .linkToApp {
@@ -20,37 +28,48 @@
     gap: 20px;
     font-family: "Ultra";
     font-weight: 500;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1 1 300px; /* Allow the app store buttons to wrap */
 }
 
 .linkToApp img {
     width: 38px;
+    height: auto;
 }
 
-.appStore {
-    width: 160px;
-    background-color: rgb(255, 255, 255);
-    padding: 8px;
-    border-radius: 6px;
-}
-
-.appStore a {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    color: inherit;
-}
-
+.appStore,
 .google {
     width: 160px;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     padding: 8px;
     border-radius: 6px;
 }
+
+.appStore a,
 .google a {
     display: flex;
     align-items: center;
     gap: 8px;
     text-decoration: none;
     color: inherit;
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 50px 20px; 
+    }
+
+    .logo img {
+        max-width: 400px; 
+    }
+
+    .linkToApp {
+        gap: 15px;
+    }
+
+    .appStore, 
+    .google {
+        width: 130px; 
+    }
 }

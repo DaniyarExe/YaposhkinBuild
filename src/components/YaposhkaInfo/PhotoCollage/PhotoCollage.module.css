@@ -7,36 +7,54 @@
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-  }
-  
- .Main img {
+    box-sizing: border-box;
+}
+
+.Main img {
     width: 100%;
-    height:auto;
+    height: auto;
     border-radius: 20px;
     object-fit: cover;
-  }
-
-  
-.twoPackRolls img{
-    
 }
 
-.firstBlock{
+.firstBlock,
+.secondBlock,
+.thirdBlock {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.secondBlock{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.secondBlock {
     padding-top: 270px;
 }
-  
-.thirdBlock{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+
+.thirdBlock {
     padding-top: 240px;
+}
+
+@media (max-width: 1024px) {
+    .Main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .secondBlock {
+        padding-top: 100px;
+    }
+
+    .thirdBlock {
+        padding-top: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Main {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+
+    .secondBlock,
+    .thirdBlock {
+        padding-top: 40px;
+    }
 }

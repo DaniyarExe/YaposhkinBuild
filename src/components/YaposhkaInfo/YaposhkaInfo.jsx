@@ -94,7 +94,9 @@ const YaposhkaInfo = () => {
                     />
                 ))}
             </div>
-            <PhotoCollage />
+            <div className={style.PhotoCollage}>
+                <PhotoCollage />
+            </div>
         </div>
     )
 }

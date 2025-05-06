@@ -3,6 +3,7 @@
     flex-direction: column;
     background-color: #fff;
     padding: 150px;
+    box-sizing: border-box;
 }
 
 .Partner {
@@ -10,6 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .Partner h1 {
@@ -19,7 +21,6 @@
 }
 
 .Partner p {
-    display: flex;
     font-size: 33px;
     font-family: "Light";
 }
@@ -30,4 +31,44 @@
     gap: 110px;
     padding-top: 50px;
     margin: 0 auto;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .Main {
+        padding: 100px 60px;
+    }
+
+    .Partner h1 {
+        font-size: 80px;
+    }
+
+    .Partner p {
+        font-size: 28px;
+    }
+
+    .PortraitCard {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Main {
+        padding: 60px 20px;
+    }
+
+    .Partner h1 {
+        font-size: 60px;
+    }
+
+    .Partner p {
+        font-size: 22px;
+        flex-direction: column;
+    }
+
+    .PortraitCard {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
 }

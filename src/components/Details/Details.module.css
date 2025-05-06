@@ -1,4 +1,4 @@
-.Main{
+.Main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,55 +6,100 @@
     padding: 150px;
 }
 
-.MainText{
+.MainText {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.salaryText{
+.salaryText {
     font-family: "Ultra";
-    color:#29b7d8;;
+    color: #29b7d8;
     font-size: 30px;
 }
 
-.logoText{
+.logoText {
     display: flex;
     align-items: center;
 }
 
-.logoText img{
-    width: 650px;
+.logoText img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
 }
 
-.Description{
+.Description {
     font-family: "Light";
     font-size: 32px;
     padding-top: 15px;
 }
 
-.phoneNumberInput{
+.phoneNumberInput {
     display: flex;
     gap: 20px;
     padding-top: 20px;
+    flex-wrap: wrap;
 }
 
-.phoneNumberInput input{
+.phoneNumberInput input {
     border: none;
     background-color: #cecece;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: 60px;
     padding: 20px;
     font-size: 20px;
     outline: none;
+    box-sizing: border-box;
 }
 
-.phoneNumberInput button{
-    width: 250px;
+.phoneNumberInput button {
+    width: 100%;
+    max-width: 250px;
     height: 60px;
     background-color: #28B9D8;
     border: none;
+    display: flex;
     align-items: center;
+    justify-content: center;
     padding: 10px;
     color: #fff;
     font-family: "Light";
     font-size: 18px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .Main {
+        padding: 80px 15px;
+    }
+
+    .MainText{
+        text-align: center;
+    }
+
+    .salaryText {
+        font-size: 22px;
+    }
+
+    .Description {
+        font-size: 20px;
+    }
+
+    .logoText{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .phoneNumberInput {
+        align-items: center;
+    }
+
+    .phoneNumberInput input,
+    .phoneNumberInput button {
+        max-width: 100%;
+        width: 100%;
+    }
 }

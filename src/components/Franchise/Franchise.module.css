@@ -2,16 +2,16 @@
     background-image:
         linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.5)),
         url("../../../public/assets/img/Rectangle.png");
-
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #fff;
     font-family: "Light";
-    padding: 150px;
-
+    padding: 100px;
 }
 
 .logo {
-    padding-top: 600px;
+    padding-top: 300px;
     font-family: "Ultra";
 }
 
@@ -27,52 +27,65 @@
 
 .Locations {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 400px;
     padding-top: 40px;
+    flex-wrap: wrap;
 }
 
-.ActualLocations {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.ActualLocations h1 {
-    font-size: 80px;
-}
-
-.ActualLocations p {
-    font-size: 28px;
-}
-
-.ProjectLocations {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.ProjectLocations h1{
-    font-size: 80px;
-}
-
-.ProjectLocations p {
-    font-size: 28px;
-}
-
+.ActualLocations,
+.ProjectLocations,
 .YaposhkinRolls {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
+.ActualLocations h1,
+.ProjectLocations h1,
 .YaposhkinRolls h1 {
     font-size: 80px;
 }
 
-.YaposhkinRolls p{
+.ActualLocations p,
+.ProjectLocations p,
+.YaposhkinRolls p {
     font-size: 28px;
+}
+
+@media (max-width: 768px) {
+    .Main {
+        padding: 60px 15px;
+    }
+
+    .logo {
+        padding-top: 150px;
+    }
+
+    .logo h1 {
+        font-size: 32px;
+    }
+
+    .FranchiseDescrip {
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+
+    .Locations {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .ActualLocations h1,
+    .ProjectLocations h1,
+    .YaposhkinRolls h1 {
+        font-size: 48px;
+    }
+
+    .ActualLocations p,
+    .ProjectLocations p,
+    .YaposhkinRolls p {
+        font-size: 18px;
+    }
 }

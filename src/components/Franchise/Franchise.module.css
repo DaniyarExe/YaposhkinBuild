@@ -1,22 +1,51 @@
 .Main {
-    background-image:
-        linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.5)),
-        url("../../../public/assets/img/Rectangle.png");
+    position: relative;
+    color: #fff;
+    font-family: "Light";
+    padding: 800px 0 10px 140px;
+    overflow: hidden;
+    /* Не обязательно, но может помочь */
+    z-index: 0;
+}
+
+/* Фоновая картинка */
+.Main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../assets/img/Монтажная область 4@4xsd 1 (1).png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #fff;
-    font-family: "Light";
-    padding: 100px;
+    z-index: -2;
 }
 
+/* Градиент сверху */
+.Main::after {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    right: -25px;
+    bottom: -25px;
+    background: linear-gradient(180deg, rgba(82, 224, 255, 0) 0%, #52E0FF 100%);
+    filter: blur(100px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+
+
 .logo {
-    padding-top: 300px;
-    font-family: "Ultra";
+    font-family: "UltraBold";
 }
 
 .logo h1 {
-    font-size: 50px;
+    font-size: 65px;
 }
 
 .FranchiseDescrip {
@@ -25,32 +54,11 @@
     padding-bottom: 40px;
 }
 
-.Locations {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 40px;
-    flex-wrap: wrap;
-}
-
-.ActualLocations,
-.ProjectLocations,
-.YaposhkinRolls {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.ActualLocations h1,
-.ProjectLocations h1,
-.YaposhkinRolls h1 {
-    font-size: 80px;
-}
-
-.ActualLocations p,
-.ProjectLocations p,
-.YaposhkinRolls p {
-    font-size: 28px;
+.rectangle {
+    width: 1630px;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.52%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 90px;
 }
 
 @media (max-width: 768px) {
@@ -59,33 +67,48 @@
     }
 
     .logo {
-        padding-top: 150px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 150px;
+
     }
 
     .logo h1 {
-        font-size: 32px;
+        font-size: 40px;
     }
 
     .FranchiseDescrip {
         font-size: 18px;
-        padding-bottom: 30px;
+        text-align: center;
+        margin-top: 100px;
     }
 
-    .Locations {
-        display: flex;
-        justify-content: center;
-        gap: 40px;
+    .gradientOverlayUp {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 25%;
+        background: linear-gradient(180deg, rgba(123, 232, 255, 0) 0%, #52E0FF 100%);
+        pointer-events: none;
+        z-index: -1;
     }
 
-    .ActualLocations h1,
-    .ProjectLocations h1,
-    .YaposhkinRolls h1 {
-        font-size: 48px;
+    .gradientOverlayDown {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 25%;
+        background: linear-gradient(0deg, rgba(123, 232, 255, 0) 0%, #52E0FF 100%);
+        pointer-events: none;
+        z-index: -1;
     }
 
-    .ActualLocations p,
-    .ProjectLocations p,
-    .YaposhkinRolls p {
-        font-size: 18px;
+    .rectangle {
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.52%, rgba(255, 255, 255, 0) 100%);
+        border-radius: 90px;
     }
 }

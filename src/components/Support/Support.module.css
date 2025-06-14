@@ -3,20 +3,21 @@
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    font-family: "Light";
-    padding: 150px;
     box-sizing: border-box;
+    font-family: "Bold";
+    gap: 80px;
+    margin-left: 140px;
+    width: 1700px;
 }
 
 .SupportMain {
-    font-family: "Ultra";
+    font-family: "UltraBold";
     font-size: 30px;
 }
 
 .BussinesInfo {
     display: flex;
     justify-content: space-between;
-    gap: 80px;
     padding-top: 50px;
     flex-wrap: wrap;
 }
@@ -24,22 +25,53 @@
 .websiteHeader,
 .systemHeader,
 .marketingHeader {
-    font-family: "Ultra";
-    font-size: 30px;
+    font-family: "UltraBold";
+    font-size: 32px;
     padding-bottom: 10px;
+    width: 400px;
 }
 
 .webDescrip,
 .systemDescrip,
 .marketingDescrip {
-    font-size: 20px;
+    font-size: 18px;
     max-width: 500px;
 }
 
+.rectangle {
+    width: 1630px;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.52%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 90px;
+}
+
+.rectangle1 {
+    width: 1630px;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.52%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 90px;
+    display: none;
+}
+
 @media (max-width: 768px) {
+
+    .rectangle1 {
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.52%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 90px;
+    display: block;
+}
+
     .Main {
         padding: 80px 15px;
         text-align: center;
+        margin-left: 0;
+        width: 100%;
+        align-items: center;
+        gap: 40px;
+        display: flex;
+        flex-direction: column;
     }
 
     .SupportMain {
@@ -48,18 +80,28 @@
 
     .BussinesInfo {
         flex-direction: column;
+        align-items: center;
         gap: 40px;
+        padding-top: 40px;
     }
 
     .websiteHeader,
     .systemHeader,
     .marketingHeader {
         font-size: 24px;
+        width: 100%;
+        /* убрать фиксированную ширину */
     }
 
     .webDescrip,
     .systemDescrip,
     .marketingDescrip {
         font-size: 18px;
+        max-width: 100%;
+    }
+
+    .rectangle {
+        width: 100%;
+        /* сделать полоску на всю ширину */
     }
 }

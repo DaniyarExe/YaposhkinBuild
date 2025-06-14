@@ -1,12 +1,20 @@
 .Main {
-    background-color: #fff;
     padding: 150px;
     box-sizing: border-box;
 }
 
+
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
 .logo img {
-    width: 100%;
-    max-width: 550px;
+    width: 600px;
     height: auto;
 }
 
@@ -17,7 +25,23 @@
     padding-top: 50px;
     justify-content: center;
     align-items: center;
-    
+
+}
+
+.whiteDot {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.5) 25.48%, rgba(255, 255, 255, 0) 85.58%);
+    position: absolute;
+    left: 700px;
+    top: 6600px;
+}
+
+.rectangle {
+  width: 1630px;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.52%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 90px;
 }
 
 @media (max-width: 768px) {
@@ -36,7 +60,13 @@
         width: 100%;
     }
 
-    .PhotoCollage {
-        display: none;
-    }
+    .whiteDot {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.5) 25.48%, rgba(255, 255, 255, 0) 85.58%);
+    position: absolute;
+    left: 700px;
+    top: 6600px;
+    display: none;
+}
 }

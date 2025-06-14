@@ -1,12 +1,13 @@
 import React from 'react'
 import style from './PhotoCollage.module.css'
-import first from "../../../../public/assets/img/Clip path group.png"
-import second from "../../../../public/assets/img/2.png"
-import third from "../../../../public/assets/img/3.png"
-import four from "../../../../public/assets/img/4.png"
-import five from "../../../../public/assets/img/5.png"
-import six from "../../../../public/assets/img/6.png"
-import seven from "../../../../public/assets/img/7.png"
+import first from '../../../assets/img/Rectangle 18.png'
+import second from '../../../assets/img/Rectangle 19.png'
+import third from '../../../assets/img/Rectangle 20.png'
+import four from '../../../assets/img/Rectangle 21.png'
+import five from '../../../assets/img/Rectangle 22.png'
+import six from '../../../assets/img/Rectangle 23.png'
+import seven from '../../../assets/img/Rectangle 24.png'
+
 
 const PhotoCollage = () => {
 
@@ -16,22 +17,26 @@ const PhotoCollage = () => {
         <div className={style.twoPackRolls}>
           <img src={first} alt="" />
         </div>
-        <img src={third} alt="" />
-        <img src={four} alt="" />
+        <img src={five} alt="" />
+        <img src={six} alt="" />
       </div>
       <div className={style.secondBlock}>
-        <img src={second} alt="" />
         <div className={style.Chief}>
-          <img src={six} alt="" />
+          <img src={second} alt="" />
+        </div>
+        <div className={style.Chieff}>
+
+          <img src={four} alt="" />
         </div>
       </div>
       <div className={style.thirdBlock}>
-        <img src={seven} alt="" />
-        <img src={five} alt="" />
+        <div className={style.manySushi}>
+          <img src={third} alt="" />
+        </div>
+        <div className={style.packRoll}>
+          <img src={seven} alt="" />
+        </div>
       </div>
-      {/* {images.map((img, i) => (
-        <img key={i} src={img} alt={`photo-${i}`} className={style[`img${i + 1}`]} />
-      ))} */}
     </div>
   )
 }

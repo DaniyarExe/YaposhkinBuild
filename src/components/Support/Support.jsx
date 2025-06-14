@@ -4,10 +4,12 @@ import style from "./Support.module.css"
 const Support = () => {
     return (
         <div className={style.Main}>
+            <div className={style.rectangle}></div>
             <div className={style.SupportMain}>
                 <h1>ПОДДЕРЖКА ФРАНЧАЙЗИ</h1>
             </div>
             <div className={style.BussinesInfo}>
+                <div className={style.rectangle1}></div>
                 <div className={style.website}>
                     <div className={style.websiteHeader}>
                         <p>САЙТ / ПРИЛОЖЕНИЕ</p>
@@ -20,6 +22,7 @@ const Support = () => {
                         <p>продажами и клиентской базой.</p>
                     </div>
                 </div>
+                <div className={style.rectangle1}></div>
                 <div className={style.crmSystem}>
                     <div className={style.systemHeader}>
                         <p>CRM-СИСТЕМА</p>
@@ -31,6 +34,7 @@ const Support = () => {
                         <p>и автоматизацию бизнес-процессов.</p>
                     </div>
                 </div>
+                <div className={style.rectangle1}></div>
                 <div className={style.marketing}>
                     <div className={style.marketingHeader}>
                         <p>ЭФФЕКТИВНЫЙ МАРКЕТИНГ</p>
@@ -43,6 +47,7 @@ const Support = () => {
                     </div>
                 </div>
             </div>
+            <div className={style.rectangle}></div>
         </div>
     )
 }

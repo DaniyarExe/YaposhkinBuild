@@ -1,86 +1,64 @@
 .Main {
     display: flex;
-    flex-direction: column;
-    padding: 150px;
+    flex-direction: column; 
     color: #fff;
-    box-sizing: border-box;
+    gap: 40px;
+    width: 1700px;
+    margin-left: 100px;
 }
-
-.MainText {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.start {
-    font-size: 50px;
-    font-family: "Ultra";
-}
-
-.succesful {
-    font-size: 39px;
-    font-family: "Ultra";
-}
-
-.business {
-    font-family: "Ultra";
-    font-size: 60px;
-}
-
 .contactUs {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 100px;
+    
     font-size: 20px;
-    font-family: "Light";
+    font-family: "Bold";
 }
 
-@media (max-width: 1024px) {
-    .Main {
-        padding: 100px 60px;
-    }
+.footImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .start {
-        font-size: 40px;
-    }
-
-    .succesful {
-        font-size: 30px;
-    }
-
-    .business {
-        font-size: 50px;
-    }
-
-    .contactUs {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
+.whiteDot {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.5) 25.48%, rgba(255, 255, 255, 0) 85.58%);
+    position: absolute;
+    left: 800px;
+    top: 8650px;
 }
 
 @media (max-width: 768px) {
     .Main {
-        padding: 60px 20px;
-    }
-
-    .start {
-        font-size: 30px;
-    }
-
-    .succesful {
-        font-size: 24px;
-    }
-
-    .business {
-        font-size: 40px;
+        width: 100%;
+        max-width: 375px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 50px 20px;
+        margin: 0 auto;
+        box-sizing: border-box;
     }
 
     .contactUs {
-        font-size: 18px;
+        display: flex;
         flex-direction: column;
+        gap: 10px;
         align-items: center;
-        gap: 15px;
+        text-align: center;
+    }
+
+    .whiteDot {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .footImg {
+        display: none;
     }
 }
+

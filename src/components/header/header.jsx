@@ -1,29 +1,33 @@
 import React from 'react'
 import style from './header.module.css'
-import appStore from '../../../public/assets/logo/app-store.png'
-import googlePlay from "../../../public/assets/logo/google-play.png"
-import logo from '../../../public/assets/logo/сайт_6.pdf__3_-removebg-preview (1).png'
+import appStore from '../../assets/logo/apple.png'
+import googlePlay from "../../assets/logo/google.png"
+import logo from '../../assets/logo/logo.png'
+import upImg from '../../assets/img/_РµР¶РёРј_РёР·РѕР»СЏС†РёРё.png'
 
 const header = () => {
     return (
         <div className={style.main}>
-            <div className={style.logo}>
-                <img src={logo} alt="" />
-            </div>
-            <div className={style.linkToApp}>
-                <div className={style.appStore}>
-                    <a href="">
-                        <img src={appStore} alt="" />
-                        <p>App Store</p>
-                    </a>
+            <div className={style.nav}>
+                <div className={style.logo}>
+                    <img src={logo} alt="" />
                 </div>
-                <div className={style.google}>
-                    <a href="">
-                        <img src={googlePlay} alt="" />
-                        <p>Google Play</p>
-                    </a>
+                <div className={style.linkToApp}>
+                    <div className={style.appStore}>
+                        <a href="">
+                            <img src={appStore} alt="" />
+                        </a>
+                    </div>
+                    <div className={style.google}>
+                        <a href="">
+                            <img src={googlePlay} alt="" />
+                        </a>
 
+                    </div>
                 </div>
+            </div>
+            <div className={style.downImg}>
+                <img src={upImg} alt="" />
             </div>
         </div>
     )

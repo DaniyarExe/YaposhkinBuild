@@ -1,24 +1,37 @@
 .Main {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5)),
-        url("../../../public/assets/img/island.png");
-    background-size: cover;
-    background-position: center;
+    position: relative;
+    background: url("../../assets/img/island.png") center/cover no-repeat;
     color: #fff;
-    font-family: 'Light';
-    padding: 150px;
-    box-sizing: border-box;
-    padding-top: 600px;
+    z-index: 0;
+}
+
+.Main::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #52E0FF 100%);
+    z-index: -1;
 }
 
 .IslandMain {
-    font-family: "Ultra";
-    font-size: 30px;
+    margin-left: 140px;
+    margin-top: 1000px;
+    margin-bottom: 120px;
+}
+
+.islandTitle {
+    font-family: "UltraBold";
+    font-size: 45px;
 }
 
 .IslandDescrip {
     font-size: 32px;
     padding-top: 20px;
     max-width: 1600px;
+    font-family: 'Bold';
 }
 
 .InvestDateInfo {
@@ -27,7 +40,8 @@
     flex-wrap: wrap;
     gap: 30px;
     padding-top: 30px;
-    width: 600px;
+    width: 1000px;
+    font-family: "Bold";
 }
 
 .OpeningDates,
@@ -36,8 +50,8 @@
 }
 
 .bold {
-    font-family: "Ultra";
-    font-size: 30px;
+    font-family: "UltraBold";
+    font-size: 40px;
 }
 
 .Presentation {
@@ -57,35 +71,57 @@
 
 @media (max-width: 768px) {
     .Main {
-        padding: 100px 15px 60px;
+        padding: 60px 20px;
+        background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../../assets/img/island.png"); /* Например, адаптивная картинка */
     }
 
     .IslandMain {
-        font-size: 24px;
+        margin-left: 0;
+        margin-top: 400px;
+        margin-bottom: 80px;
+        text-align: left;
+    }
+
+    .islandTitle {
+        font-size: 26px;
+        line-height: 1.3;
     }
 
     .IslandDescrip {
         font-size: 18px;
+        padding-top: 12px;
+        max-width: 100%;
+        line-height: 1.4;
     }
 
     .InvestDateInfo {
         flex-direction: column;
-        gap: 20px;
+        gap: 16px;
+        padding-top: 25px;
+        width: 100%;
     }
 
     .OpeningDates,
     .Invest {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .bold {
-        font-size: 24px;
+        font-size: 20px;
+    }
+
+    .Presentation {
+        padding-top: 25px;
     }
 
     .Presentation button {
         width: 100%;
-        font-size: 20px;
-        padding: 16px;
+        font-size: 18px;
+        padding: 14px;
     }
 }
+
+

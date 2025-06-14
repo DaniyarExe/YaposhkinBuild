@@ -2,24 +2,24 @@
     display: flex;
     flex-direction: column;
     color: #fff;
-    font-family: "Light";
-    padding: 150px;
+    margin-top: 100px;
+    overflow: visible;
+    z-index: 0;
 }
 
 .logo {
-    display: flex;
-    flex-direction: column;
+    background: #52E0FF;
+    padding-bottom: 300px;
+    text-align: center;
 }
 
-.logo img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-}
-
-.logo h1 {
-    font-family: "Ultra";
-    font-size: 46px;
+.outlinedText {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 180px;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
 }
 
 .MoneyInfo {
@@ -27,173 +27,200 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 700px;
 }
 
 .Moneys {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 10px;
     margin-top: 70px;
     align-items: center;
 }
 
-.arrived,
-.Earnings {
-    font-family: "Ultra";
-    font-size: 25px;
-    max-width: 300px;
-}
-
-.arrivedDescrip,
-.EarningsDescrip {
-    max-width: 450px;
-    font-size: 18px;
+.arrived {
+    font-family: "UltraBold";
+    font-size: 32px;
 }
 
 .withoutRoyalty {
-    max-width: 350px;
+    max-width: 440px;
     background-color: #fff;
-    color: #29b7d8;
+    color: #52E1FF;
     border-radius: 45px 45px 0 0;
     padding: 20px;
+}
+
+.royaltyTitle {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
     text-align: center;
 }
 
-.withoutRoyalty h1 {
-    font-family: "Ultra";
-    font-size: 40px;
-    max-width: 200px;
-    margin: 0 auto;
+.royaltyTitle h1 {
+    font-family: "UltraBold";
+    font-size: 65px;
+    margin: 0;
 }
 
+.percent {
+    font-family: "UltraBold" !important;
+    font-size: 128px !important;
+}
+
+
 .withoutRoyalty p {
-    font-size: 18px;
+    font-size: 22px;
+    color: #00819D;
+    font-family: "Bold";
 }
 
 .chopstickCenter {
-    display: flex;
-    justify-content: center;
-    margin: 50px 0;
+    position: absolute;
+    top: 1500px;
+    left: 550px;
 }
 
 .chopstickCenter img {
-    width: 100%;
-    max-width: 700px;
-    height: auto;
+    width: 900px;
 }
 
 .Payback {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 10px;
     margin-top: 70px;
     padding: 0 10px;
+    height: 100%;
+    align-self: flex-end;
+    flex-shrink: 0;
 }
 
-.RollsOccupancy,
-.RollsInvetments {
-    text-align: end;
-}
-
-.occupancy,
-.investments {
-    font-family: "Ultra";
+.occupancy {
+    font-family: "UltraBold";
     font-size: 25px;
+    margin-left: 170px;
 }
 
-.occupancyDescrip,
-.investmentsDescrip {
-    font-size: 18px;
+.buks {
+    color: #00819D;
+    font-family: "UltraBold";
+    font-size: 110px;
 }
 
 .LumpSum {
-    max-width: 420px;
     background-color: #fff;
-    color: #29b7d8;
+    color: #52E1FF;
     border-radius: 45px 45px 0 0;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
 }
 
 .LumpSum h1 {
     display: flex;
-    align-items: flex-end;
-    font-family: "Ultra";
-    font-size: 40px;
-    max-width: 300px;
+    font-family: "UltraBold";
+    font-size: 45px;
 }
 
-.percent {
-    font-family: "Ultra";
-    font-size: 100px;
-    text-align: center;
+.secondH {
+    font-size: 64px;
+    font-family: "UltraBold";
 }
+
+.list{
+    display: none;
+}
+
 
 @media (max-width: 768px) {
     .Main {
-        margin-top: 100px;
-        padding: 20px 10px;
-        text-align: center;
+        margin-top: 60px;
+    }
+
+    .logo {
+        padding: 0;
     }
 
     .logo h1 {
-        font-size: 32px;
+        font-size: 64px;
     }
 
-    .arrived,
-    .Earnings,
-    .occupancy,
-    .investments {
-        font-size: 20px;
+    .chopstickCenter {
+        position: absolute;
+        left: -90px;
+        top: 1600px;
     }
 
-    .arrivedDescrip,
-    .EarningsDescrip,
-    .occupancyDescrip,
-    .investmentsDescrip {
-        font-size: 16px;
+    .chopstickCenter img {
+        width: 600px;
+        display: block;
     }
 
-    .withoutRoyalty h1,
-    .LumpSum h1 {
-        font-size: 28px;
+    .gradientOverlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 25%;
+        background: linear-gradient(180deg, rgba(123, 232, 255, 0) 0%, #52E0FF 100%);
+        pointer-events: none;
     }
 
-    .withoutRoyalty{
-        border-radius: 30px;
-    }
-
-    .percent {
-        font-size: 60px;
-    }
-
-    .Payback {
-        gap: 50px;
-        
-    }
-
-    .RollsOccupancy,
-    .RollsInvetments {
-        text-align: center;
+    .MoneyInfo{
+        display: flex;
+        justify-content: start;
+        gap: 20px;
     }
 
     .Moneys {
-        gap: 50px;
+        margin-top: 600px;
+        display: flex;
     }
 
-    .MoneyInfo {
-        flex-direction: column;
+    .withoutRoyalty{
+        max-width: 350px;
+        border-radius: 0px 45px 45px 0px;
+    }
+
+    .royaltyTitle h1{
+        font-size: 60px;
+    }
+
+    .percent{
+        font-size: 100px !important;
+    }
+
+    .Payback{
+        display: flex;
+        justify-content: end;
     }
 
     .LumpSum{
-        border-radius: 30px;
+        width: 350px;
+        border-radius: 45px 0 0 45px;
+        margin-left: 115px;
+        height: 450px;
     }
 
-    .chopstickCenter{
-        display: none;
+    .LumpSum h1 {
+        font-size: 32px;
+    }
+
+    .secondH{
+        font-size: 62px;
+    }
+
+    .buks{
+        font-size: 80px;
+    }
+
+    .list{
+        display: block;
+        position: absolute;
+        top: 3030px;
+        left: 100px;
     }
 }

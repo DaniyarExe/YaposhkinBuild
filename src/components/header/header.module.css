@@ -4,7 +4,7 @@
     justify-content: start;
 }
 
-.nav{
+.nav {
     padding: 100px 100px 0 100px;
     display: flex;
     justify-content: space-between;
@@ -24,9 +24,11 @@
 
 .linkToApp {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 25%;
 }
+
 .appStore a,
 .google a {
     display: flex;
@@ -36,32 +38,43 @@
     color: inherit;
 }
 
-.downImg{
+.appStore,
+.google {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.downImg {
     margin-left: 120px;
 }
 
 @media (max-width: 768px) {
 
-    .main{
+    .main {
         padding: 20px;
     }
 
-    .nav{
+    .nav {
         display: flex;
-        flex-direction: column  ;
+        flex-direction: column;
         padding: 0;
     }
 
     .logo img {
-        max-width: 400px; 
+        max-width: 400px;
     }
 
-    .linkToApp{
-        width: 400px;
+    .linkToApp {
+        width: 90%;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 10px;
     }
 
-    .downImg img{
-        
+    .downImg img {
+
         display: none;
     }
 }

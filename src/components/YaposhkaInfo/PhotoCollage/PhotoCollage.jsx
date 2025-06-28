@@ -12,30 +12,19 @@ import seven from '../../../assets/img/Rectangle 24.png'
 const PhotoCollage = () => {
 
   return (
-    <div className={style.Main}>
-      <div className={style.firstBlock}>
-        <div className={style.twoPackRolls}>
-          <img src={first} alt="" />
-        </div>
-        <img src={five} alt="" />
-        <img src={six} alt="" />
+     <div className={style.gridWrapper}>
+      <div className={style.column}>
+        <img src={first} alt="1" />
+        <img src={five} alt="2" />
+        <img src={six} alt="3" />
       </div>
-      <div className={style.secondBlock}>
-        <div className={style.Chief}>
-          <img src={second} alt="" />
-        </div>
-        <div className={style.Chieff}>
-
-          <img src={four} alt="" />
-        </div>
+      <div className={style.column}>
+        <img src={second} alt="4" />
+        <img src={four} alt="5" />
       </div>
-      <div className={style.thirdBlock}>
-        <div className={style.manySushi}>
-          <img src={third} alt="" />
-        </div>
-        <div className={style.packRoll}>
-          <img src={seven} alt="" />
-        </div>
+      <div className={style.column}>
+        <img src={third} alt="6" />
+        <img src={seven} alt="7" />
       </div>
     </div>
   )

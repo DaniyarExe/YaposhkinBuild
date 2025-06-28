@@ -4,11 +4,9 @@
     font-family: "Light";
     padding: 800px 0 10px 140px;
     overflow: hidden;
-    /* Не обязательно, но может помочь */
     z-index: 0;
 }
 
-/* Фоновая картинка */
 .Main::before {
     content: '';
     position: absolute;
@@ -23,23 +21,6 @@
     z-index: -2;
 }
 
-/* Градиент сверху */
-.Main::after {
-    content: '';
-    position: absolute;
-    top: -25px;
-    left: -25px;
-    right: -25px;
-    bottom: -25px;
-    background: linear-gradient(180deg, rgba(82, 224, 255, 0) 0%, #52E0FF 100%);
-    filter: blur(100px);
-    z-index: -1;
-    pointer-events: none;
-}
-
-
-
-
 .logo {
     font-family: "UltraBold";
 }
@@ -52,6 +33,7 @@
     font-size: 25px;
     padding-top: 20px;
     padding-bottom: 40px;
+    font-family: "Bold";
 }
 
 .rectangle {
@@ -63,14 +45,33 @@
 
 @media (max-width: 768px) {
     .Main {
+        position: relative;
+        z-index: 1;
         padding: 60px 15px;
+        overflow: hidden;
+    }
+
+    .Main::before {
+        content: "";
+        position: absolute;
+        top: -100px;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image:
+            linear-gradient(180deg, rgba(121, 231, 255, 0) 60%, #52E0FF 72.6%),
+            url("../../assets/img/Монтажная область 4@4xsd 1 (1).png");
+        background-size: 600px;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+        pointer-events: none;
     }
 
     .logo {
         display: flex;
         justify-content: center;
-        margin-bottom: 150px;
-
+        margin-top: 50px;
     }
 
     .logo h1 {
@@ -78,18 +79,18 @@
     }
 
     .FranchiseDescrip {
-        font-size: 18px;
+        font-size: 20px;
         text-align: center;
-        margin-top: 100px;
+        margin-top: 280px;
     }
 
     .gradientOverlayUp {
         position: absolute;
-        bottom: 0;
+        bottom: 100px;
         left: 0;
         width: 100%;
         height: 25%;
-        background: linear-gradient(180deg, rgba(123, 232, 255, 0) 0%, #52E0FF 100%);
+        background: linear-gradient(180deg, rgba(123, 232, 255, 0) 0%, #52E0FF 90%);
         pointer-events: none;
         z-index: -1;
     }

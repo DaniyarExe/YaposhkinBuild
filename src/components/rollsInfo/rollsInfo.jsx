@@ -30,7 +30,9 @@ const rollsInfo = () => {
                                 <p>Получить презентацию</p>
                             </button>
                         </div>
-                        <img src={leftArrow} alt="" />
+                        <div className={style.leftArrow}>
+                            <img src={leftArrow} alt="" />
+                        </div>
                         <div className={style.requestInfo}>
                             <p>Оставьте заявку и получите</p>
                             <p>презентацию франшизы</p>
@@ -46,9 +48,9 @@ const rollsInfo = () => {
             <div className={style.sideInfo}>
                 <div className={style.mobile}>
                     <div className={style.year}>
-                        <div className={style.sideTitle}><span className={style.arrow}>{'<'}</span> 6 лет</div>
+                        <div className={style.sideTitleY}><span className={style.arrow}>{'<'}</span> 6 лет</div>
                         <div className={style.sideDescriptionY}>
-                            <p>Доставляем суши, 
+                            <p>Доставляем суши,
                                 роллы и радость
                             </p>
                         </div>
@@ -57,10 +59,10 @@ const rollsInfo = () => {
                     <div className={style.money}>
                         <div className={style.sideTitleM}><span className={style.arrow}>{'<'}</span> 3,6 млн ₽</div>
                         <div className={style.sideDescriptionM}>
-                            <p>Годовой оборот всех 
+                            <p>Годовой оборот всех
                                 филиалов Yaposhkin Rolls
                             </p>
-                            
+
                         </div>
                     </div>
                 </div>

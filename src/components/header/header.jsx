@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './header.module.css'
-import appStore from '../../assets/logo/apple.png'
-import googlePlay from "../../assets/logo/google.png"
+import appStore from '../../assets/logo/AS.png'
+import googlePlay from "../../assets/logo/GP.png"
 import logo from '../../assets/logo/logo.png'
 import upImg from '../../assets/img/_РµР¶РёРј_РёР·РѕР»СЏС†РёРё.png'
 

@@ -7,7 +7,7 @@ const Footer = () => {
         <div className={style.Main}>
             <div className={style.contactUs}>
                 <p>www.yaposhkinrolls.com</p>
-                <p>yaposhkinrolls@gmail.com</p>
+                <p>info@yaposhkin.com</p>
                 <p>+996 (997) 71 66 66</p>
             </div>
             <div className={style.footImg}>

@@ -2,6 +2,7 @@ import React from 'react'
 import style from './RollsFigures.module.css'
 import secondChopstick from '../../assets/img/Монтажная область 1@4x 2.png'
 import list from '../../assets/img/Монтажная область 3@4x 1.png'
+import leav from '../../assets/img/Монтажная область 3@4x 2.png'
 
 const RollsFigures = () => {
     return (
@@ -21,16 +22,22 @@ const RollsFigures = () => {
                             <span className={style.percent}>0%</span>
                             <h1>РОЯЛТИ</h1>
                         </div>
-                        <p>Всё, что вы зарабатываете,</p>
-                        <p>остаётся у вас.</p>
-                        <p>Мы не забираем</p>
-                        <p>процент с вашей выручки</p>
+                        <div className={style.royaltyDescrip}>
+                            <p>Всё, что вы зарабатываете,</p>
+                            <p>остаётся у вас.</p>
+                            <p>Мы не забираем</p>
+                            <p>процент с вашей выручки</p>
+                        </div>
                     </div>
 
                 </div>
+                <div className={style.whiteDot}></div>
+                <div className={style.leav}>
+                    <img src={leav} alt="" />
+                </div>
                 <div className={style.chopstickCenter}>
                     <img src={secondChopstick} alt="" />
-                     <div className={style.gradientOverlay}></div>
+                    <div className={style.gradientOverlay}></div>
                 </div>
                 <div className={style.Payback}>
                     <div className={style.RollsOccupancy}>
@@ -43,7 +50,7 @@ const RollsFigures = () => {
                         <h1>ПАУШАЛЬНЫЙ</h1>
                         <span className={style.secondH}>ВЗНОС ОТ</span>
                         <p className={style.buks}>7000$</p>
-                        <img src={list} alt="" className={style.list}/>
+                        <img src={list} alt="" className={style.list} />
                     </div>
                 </div>
             </div>

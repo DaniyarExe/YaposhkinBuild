@@ -1,10 +1,10 @@
 .Main {
-    background-image: 
-        linear-gradient(to bottom, rgba(82, 224, 255, 0.8), rgba(82, 224, 255, 0)),
+    background-image:
+        linear-gradient(to bottom, rgba(82, 224, 255, 1), rgba(82, 224, 255, 0)),
         url("../../assets/img/Монтажная область 5ц 1.png");
     background-repeat: no-repeat, no-repeat;
-    background-size: 100% 200px, cover; 
-    background-position: top, center;  
+    background-size: 100% 200px, cover;
+    background-position: top, center;
     background-blend-mode: normal;
     width: 100%;
     color: #fff;
@@ -13,19 +13,19 @@
 }
 
 
-.topImg{
+.topImg {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
 }
 
-.topImg img{
+.topImg img {
     width: 1630px;
     height: auto;
 }
 
-.FormatDK{
+.FormatDK {
     margin-left: 140px;
     margin-bottom: 600px;
     width: 100%;
@@ -49,7 +49,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 30px;
-max-width: 1120px;
+    max-width: 1120px;
     font-family: "Bold";
 }
 
@@ -65,33 +65,33 @@ max-width: 1120px;
 
 @media (max-width: 768px) {
 
-    .topImg{
+    .topImg {
         display: none;
     }
 
     .Main {
-        padding: 60px 20px;
-        background-size: 100% 150px, cover;
-        background-image: 
-            linear-gradient(to bottom, rgba(82, 224, 255, 0.9), rgba(82, 224, 255, 0)),
-            url("../../assets/img/Монтажная область 5ц 1.png");
+        padding: 15px;
+        background-repeat: no-repeat;
+        background-size: 700px 400px;
+        background-position: center;
     }
 
     .FormatDK {
         margin-left: 0;
-        margin-bottom: 300px;
+        margin-bottom: 50px;
     }
 
     .DKmain {
         font-size: 20px;
         margin-top: 40px;
-        line-height: 1.3;
     }
+
+    .DKtitle {}
 
     .DKdescrip {
         font-size: 16px;
         padding-top: 10px;
-        max-width: 100%;
+        max-width: 90%;
         line-height: 1.4;
     }
 
@@ -126,4 +126,3 @@ max-width: 1120px;
         padding: 14px;
     }
 }
-

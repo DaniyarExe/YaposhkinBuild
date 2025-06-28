@@ -7,7 +7,6 @@
 
 .mainInfo {
     display: flex;
-
     gap: 20px;
 }
 
@@ -20,7 +19,7 @@
     flex: 1;
     position: absolute;
     left: 930px;
-    top: 150px;
+    top: 0px;
 }
 
 .chopstickSushi {
@@ -63,7 +62,7 @@
 }
 
 .getPresentation p {
-    color: #29b7d8;
+    color: #52E1FF;
     font-size: 25px;
 }
 
@@ -101,6 +100,11 @@
     font-family: "UltraBold";
 }
 
+.sideTitleY {
+    font-size: 36px;
+    font-family: "UltraBold";
+}
+
 .sideDescriptionY {
     font-size: 24px;
     width: 350px;
@@ -127,10 +131,10 @@
 .whiteDot {
     width: 1050px;
     height: 1050px;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.5) 25.48%, rgba(255, 255, 255, 0) 85.58%);
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 25.48%, rgba(255, 255, 255, 0) 85.58%);
     position: absolute;
     left: 850px;
-    top: 200px;
+    top: 10px;
     z-index: 0;
     pointer-events: none;
 }
@@ -166,19 +170,28 @@
 
     .logoInfo {
         font-size: 28px;
+        letter-spacing: 0%;
     }
 
     .description {
         width: 300px;
         font-size: 24px;
         margin: 0;
+        line-height: 30px;
+        letter-spacing: 0%;
     }
 
     .mainImg {
         position: absolute;
-        top: 520px;
-        left: 0;
+        top: 340px;
+        left: -10px;
         z-index: -1;
+        width: 450px;
+    }
+
+    .chopstickSushi{    
+        max-width: 100%;
+        object-fit: contain;
     }
 
     .getPresentation,
@@ -193,7 +206,7 @@
     }
 
     .getPresentation button {
-        width: 350px;
+        width: 370px;
         border-radius: 21px;
     }
 
@@ -213,10 +226,9 @@
     .whiteDot {
         width: 500px;
         height: 500px;
-        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.5) 25.48%, rgba(255, 255, 255, 0) 85.58%);
         position: absolute;
-        left: 0px;
-        top: 500px;
+        left: -30px;
+        top: 350px;
         z-index: -1;
         pointer-events: none;
     }
@@ -224,30 +236,32 @@
     .sideInfo {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        text-align: center;
         gap: 30px;
         background-color: #fff;
         color: #52E1FF;
         width: 100%;
     }
 
-
-    .year,
-    .money,
-    .order {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .mobile {
+        margin-top: 10px;
+        gap: 60px;
         text-align: center;
     }
 
+
+    .year,
+    .money {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
     .sideTitle {
-        font-size: 24px;
+        font-size: 22px;
         font-family: "UltraBold";
         color: #52E1FF;
-        text-align: center;
     }
 
     .sideDescriptionY,
@@ -259,10 +273,18 @@
         color: #52E1FF;
         width: 150px;
         text-align: center;
+        line-height: 20px;
     }
 
     .sideDescriptionY {
         width: 120px;
+    }
+
+    .sideTitleY {
+        font-size: 22px;
+        font-family: "UltraBold";
+        color: #52E1FF;
+        margin-left: 20px;
     }
 
     .money {
@@ -271,11 +293,11 @@
     }
 
     .sideTitleM {
-        font-size: 24px;
+        font-size: 22px;
         font-family: "UltraBold";
         color: #52E1FF;
         order: 2;
-
+        margin-left: 30px;
     }
 
     .sideDescriptionM {
@@ -300,12 +322,12 @@
         text-align: center;
     }
 
-    .mobile {
+    .leftArrow {
         margin-top: 10px;
-        width: 450px;
-        gap: 5px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
+    }
+
+    .leftArrow img {
+        width: 20px;
+        height: auto;
     }
 }
